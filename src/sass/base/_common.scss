@@ -1,0 +1,15 @@
+@import '~node_modules/modern-normalize/modern-normalize.css';
+
+body {
+  font-family: $fontMain, $fontMainAlternative;
+  background-color: $bgPage;
+  color: $colorBlack;
+  font-size: 14px;
+	letter-spacing: 0.04em;
+	font-weigth: 500;
+}
+
+.body-fixed {
+  position: fixed;
+  width: 100%;
+}
