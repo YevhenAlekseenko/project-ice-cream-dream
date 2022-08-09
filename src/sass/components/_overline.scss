@@ -1,12 +1,8 @@
 .overline {
-  font-family: $font;
-  font-style: normal;
-  font-weight: 400;
+  font-family: $fontSecondary, $fontSecondaryAlternative;
   font-size: 30px;
-  line-height: 34px;
-  text-align: center;
+  line-height: 1.13;
   letter-spacing: 0.04em;
   text-transform: uppercase;
-
-  color: #ffa5ba;
+  color: $colorOverline;
 }

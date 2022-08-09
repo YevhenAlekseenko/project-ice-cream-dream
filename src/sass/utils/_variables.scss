@@ -6,7 +6,7 @@ $fontSecondaryAlternative: cursive;
 $colorMain: #d41443;
 $colorWhite: #ffffff;
 $colorBlack: #000000;
-$colorSubtitle: #ffa5ba;
+$colorOverline: #ffa5ba;
 $colorDescription: #907e82;
 $colorLineInContacts: #e1e1e1;
 // backgroung colors
@@ -31,3 +31,8 @@ $menuMobileWidth: 250px;
 $menuMobileHeight: 502px;
 $menuTabletWidth: 254px;
 $menuTabletHeight: 100vh;
+
+$durationPrimary: 250ms;
+$durationSecondary: 400ms;
+$timingPrimary: cubic-bezier(0.4, 0, 0.2, 1);
+$timingSecondary: linear;
