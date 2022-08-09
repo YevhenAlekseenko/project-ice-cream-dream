@@ -1,12 +1,39 @@
-<header>
-  <div class="container">
-    <a href="#" class="container__link">
-      <svg class="">
+<header class="header">
+  <div class="container container__header">
+    <a href="#" class="header__link">
+      <svg class="header__logo">
         <use href="./images/icons.svg#icon-logo"></use>
       </svg>
     </a>
-		<svg>
-			<use></use>
-		</svg>
+    <svg class="header__menu-mobile">
+      <use href="./images/icons.svg#icon-menu"></use>
+    </svg>
+    <nav>
+      <ul class="navigation__menu">
+        <li class="navigation__item">
+          <a href="#" class="navigation__link navigation__link--current"
+            >Home</a
+          >
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">About us</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">How it’s made?</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Our products</a>
+        </li>
+        <li class="navigation__item">
+          <a href="#" class="navigation__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <button class="button-light button-light__header">
+      Buy now
+      <svg class="button-light__icon">
+        <use href="./images/icons.svg#icon-arrow"></use>
+      </svg>
+    </button>
   </div>
 </header>
