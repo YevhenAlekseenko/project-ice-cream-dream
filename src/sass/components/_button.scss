@@ -1,0 +1,40 @@
+.button-light {
+  @include positioning-flex();
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+
+  color: $colorMain;
+  background-color: $bgBtnLight;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+  transition: background-color $durationPrimary $durationPrimary;
+
+	&:hover, &:focus {
+		background-color: $bgBtnLightHover;
+	}
+}
+
+.button-dark {
+  @include positioning-flex();
+  padding: 0;
+
+  font-weight: 700;
+  font-size: 16px;
+
+  color: $colorWhite;
+  background-color: $bgBtnDark;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
+
+  transition: background-color $durationPrimary $durationPrimary;
+
+	&:hover, &:focus {
+		background-color: $bgBtnDarkHover;
+	}
+}
+
