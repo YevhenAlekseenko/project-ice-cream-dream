@@ -70,6 +70,44 @@
   height: 14px;
 }
 
+.button-light__header {
+  margin: 60px auto 19px;
+  width: 209px;
+  height: 44px;
+}
+
+.navigation__header {
+  text-align: left;
+}
+
+.navigation__item-mobile {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.286;
+  color: $colorWhite;
+  border-top: 1px solid $colorBorderMenu;
+  border-bottom: 1px solid $colorBorderMenu;
+
+  transition: color $durationPrimary $timingPrimary;
+
+  &:hover,
+  &:focus {
+    color: $colorMain;
+  }
+}
+
+.navigation__item-mobile--current {
+  color: $colorMain;
+}
+
+.navigation__link-mobile {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+}
+
 .header__rightside {
   margin-right: 0;
 }
