@@ -13,9 +13,10 @@
 
   transition: background-color $durationPrimary $durationPrimary;
 
-	&:hover, &:focus {
-		background-color: $bgBtnLightHover;
-	}
+  &:hover,
+  &:focus {
+    background-color: $bgBtnLightHover;
+  }
 }
 
 .button-dark {
@@ -33,8 +34,16 @@
 
   transition: background-color $durationPrimary $durationPrimary;
 
-	&:hover, &:focus {
-		background-color: $bgBtnDarkHover;
-	}
+  &:hover,
+  &:focus {
+    background-color: $bgBtnDarkHover;
+  }
 }
 
+.button-light__icon,
+.button-dark__icon {
+  width: 4px;
+  height: 8px;
+  fill: currentColor;
+  margin-left: 12px;
+}
