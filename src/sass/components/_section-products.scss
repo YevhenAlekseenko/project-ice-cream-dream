@@ -1,0 +1,50 @@
+
+.card-product {
+    margin-top: 140px;
+    position: relative;
+    padding-top: 160px;
+    padding-bottom: 40px;
+    background-color: pink;
+    border-radius: 24px;
+    
+}
+
+
+
+.card-product__title::before {
+content: '';
+position: absolute;
+top: -140px;
+background-image: url(../images/mobile/products-cream-mobile.png);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+
+  display: flex;
+  width: 280px;
+  height: 280px;
+//   border: 2px solid red;
+  border-radius: 2px;
+}
+
+
+.card-product__title::after {
+content: '';
+background-image: url(../images/dots.svg);
+background-size: contain;
+background-repeat: no-repeat;
+background-position: center;
+
+  display: flex;
+  height: 20px;
+  border: 2px solid red;
+  border-radius: 2px;
+margin: 32px 0;
+
+
+
+}
+.card-product__dsicription { margin-bottom: 32px;}
+.card-product__icon { 
+    display: inline-block;
+    background-color: white;}
