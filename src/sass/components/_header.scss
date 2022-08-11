@@ -1,3 +1,19 @@
+.section__header {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  padding: 0;
+  padding-top: 8px;
+  @media screen and (min-width: 768px) {
+    padding-top: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 37px;
+  }
+}
+
 .container__header {
   @include positioning-flex(flex, space-between);
 }
@@ -6,6 +22,37 @@
   display: block;
   width: 199px;
   height: 50px;
+}
+
+.header__rightside {
+  margin-left: auto;
+  @include positioning-flex();
+}
+
+.navigation {
+  @media screen and (max-width: 1199px) {
+    display: none;
+  }
+}
+
+.navigation__menu {
+  @include positioning-flex($jc: start);
+  background-color: transparent;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: calc(22 / 16);
+  color: $colorWhite;
+}
+
+.navigation__item {
+  & + & {
+    margin-left: 35px;
+  }
+}
+
+.navigation__link {
+  color: inherit;
+  padding: 14px 0;
 }
 
 .header__menu-btn {
@@ -45,7 +92,7 @@
   right: 0;
   z-index: 20;
   width: 250px;
-  height: 502px;
+  height: 100vh;
   background-color: $bgMenuMobile;
   box-shadow: $shadowMenuMobile;
   transform: translateX(100%);
@@ -70,10 +117,30 @@
   height: 14px;
 }
 
-.button-light__header {
-  margin: 60px auto 19px;
+.button-light--desktop {
+  @media screen and (max-width: 767px) {
+    display: none;
+  }
+  display: block;
+  width: 160px;
+  height: 44px;
+  @media screen and (min-width: 768px) {
+    margin-left: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    margin-left: 141px;
+  }
+}
+
+.button-light--menu {
+  display: block;
   width: 209px;
   height: 44px;
+  margin: 60px auto 19px;
+  @media screen and (min-width: 768px) {
+    width: 186px;
+  }
 }
 
 .navigation__header {
@@ -97,7 +164,8 @@
   }
 }
 
-.navigation__item-mobile--current {
+.navigation__item-mobile--current,
+.navigation__item--current {
   color: $colorMain;
 }
 
@@ -106,8 +174,5 @@
   padding-top: 12px;
   padding-bottom: 12px;
   padding-left: 20px;
-}
-
-.header__rightside {
-  margin-right: 0;
+  color: inherit;
 }
