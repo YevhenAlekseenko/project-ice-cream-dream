@@ -1,0 +1,122 @@
+.contacts__section { 
+    padding-bottom: 40px;
+  @include positioning-flex;  
+  background: $bgSection;
+
+}
+
+.contacts__item {
+  padding: 40px 32px;
+  background: $bgPage;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding: 40px 40px;
+  }
+  
+}
+
+.contacts__item:last-child {
+    @media screen and (max-width: 767px) {
+        margin-bottom: 32px;
+      }
+}
+
+.contacts__category {
+  font-size: 16px;
+  line-height: 1.86;
+  text-transform: uppercase;
+  text-align: center;
+  color: $colorWhite;
+  background: $bgColorBeige;
+  border-radius: 6px;
+  width: 75px;
+}
+
+.contacts__category--bgcolor {
+  background: $bgColorGreen;
+  width: 138px;
+}
+
+.contacts__title {
+  font-size: 16px;
+  line-height: 1.86;
+  margin-top: 20px;
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px) { 
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+}
+
+.contacts__description {
+  font-size: 16px;
+  line-height: 1.83;
+
+  color: $colorDescription;
+}
+
+.contacts__timetable {
+    margin-top: 24px;
+    margin-bottom: 24px;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 1px solid $colorLineInContacts;
+    border-bottom: 1px solid $colorLineInContacts;
+@media screen and (min-width: 768px) { 
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+}
+
+.contacts__time:first-child {
+    margin-bottom: 8px;
+    @media screen and (min-width: 768px) { 
+    margin-bottom: 12px;
+}
+}
+
+.contacts__day {
+  font-size: 16px;
+  line-height: 1.86;
+}
+
+.contacts__day-time {
+  font-size: 16px;
+  line-height: 1.86;
+  color: $colorOverline;
+}
+
+
+.contacts__item-communication {
+  font-size: 12px;
+  line-height: 1.5;
+  color: $colorDescription;
+}
+
+
+@media screen and (max-width: 767px) {
+    
+.contacts__btn-item { 
+    @include positioning-flex;   
+    margin-bottom: 10px;
+}
+.contacts__btn-item:last-child {
+    margin-bottom: 0px;
+}
+}
+
+.contacts__btn {
+min-width: 161px;
+height: 44px;
+}
+
+.contacts__button-icon {
+    width: 8px;
+    height: 10px;
+}
