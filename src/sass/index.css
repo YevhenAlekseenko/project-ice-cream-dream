@@ -263,11 +263,177 @@ button {
   height: 14px;
 }
 
+.button-light__header {
+  margin: 60px auto 19px;
+  width: 209px;
+  height: 44px;
+}
+
+.navigation__header {
+  text-align: left;
+}
+
+.navigation__item-mobile {
+  display: block;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.286;
+  color: #ffffff;
+  border-top: 1px solid #e18298;
+  border-bottom: 1px solid #e18298;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.navigation__item-mobile:hover, .navigation__item-mobile:focus {
+  color: #d41443;
+}
+
+.navigation__item-mobile--current {
+  color: #d41443;
+}
+
+.navigation__link-mobile {
+  display: block;
+  padding-top: 12px;
+  padding-bottom: 12px;
+  padding-left: 20px;
+}
+
 .header__rightside {
   margin-right: 0;
 }
 
+.contacts__section {
+  padding-bottom: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #fff5f6;
+}
+
+.contacts__item {
+  padding: 40px 32px;
+  background: #ffffff;
+  box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
+  border-radius: 24px;
+}
+@media screen and (max-width: 767px) {
+  .contacts__item {
+    margin-bottom: 20px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .contacts__item {
+    padding: 40px 40px;
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__item:last-child {
+    margin-bottom: 32px;
+  }
+}
+
+.contacts__category {
+  font-size: 16px;
+  line-height: 1.86;
+  text-transform: uppercase;
+  text-align: center;
+  color: #ffffff;
+  background: #f0d1a5;
+  border-radius: 6px;
+  width: 75px;
+}
+
+.contacts__category--bgcolor {
+  background: #c2e297;
+  width: 138px;
+}
+
+.contacts__title {
+  font-size: 16px;
+  line-height: 1.86;
+  margin-top: 20px;
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__title {
+    margin-top: 32px;
+    margin-bottom: 12px;
+  }
+}
+
+.contacts__description {
+  font-size: 16px;
+  line-height: 1.83;
+  color: #907e82;
+}
+
+.contacts__timetable {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid #e1e1e1;
+  border-bottom: 1px solid #e1e1e1;
+}
+@media screen and (min-width: 768px) {
+  .contacts__timetable {
+    margin-top: 32px;
+    margin-bottom: 32px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
+}
+
+.contacts__time:first-child {
+  margin-bottom: 8px;
+}
+@media screen and (min-width: 768px) {
+  .contacts__time:first-child {
+    margin-bottom: 12px;
+  }
+}
+
+.contacts__day {
+  font-size: 16px;
+  line-height: 1.86;
+}
+
+.contacts__day-time {
+  font-size: 16px;
+  line-height: 1.86;
+  color: #ffa5ba;
+}
+
+.contacts__item-communication {
+  font-size: 12px;
+  line-height: 1.5;
+  color: #907e82;
+}
+
+@media screen and (max-width: 767px) {
+  .contacts__btn-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  .contacts__btn-item:last-child {
+    margin-bottom: 0px;
+  }
+}
+.contacts__btn {
+  min-width: 161px;
+  height: 44px;
+}
+
+.contacts__button-icon {
+  width: 8px;
+  height: 10px;
+}
+
 .footer {
+  margin: 0;
   background-color: #fff5f6;
 }
 
@@ -282,7 +448,7 @@ button {
   line-height: 1.1666666667;
   margin-bottom: 16px;
   text-transform: uppercase;
-  width: 232px;
+  width: 234px;
   color: #ffa5ba;
 }
 
@@ -290,8 +456,9 @@ button {
   font-family: "Titan One";
   font-weight: 400;
   font-size: 34px;
-  line-height: 39px;
+  line-height: 1.1470588235;
   letter-spacing: 0.04em;
+  text-transform: uppercase;
   width: 200px;
   color: #d41443;
 }
@@ -305,8 +472,6 @@ button {
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 32px;
-  height: 32px;
   margin-left: auto;
 }
 .footer-social__item + .footer-social__item {
@@ -318,15 +483,45 @@ button {
   height: 100%;
   border-radius: 50%;
   background-color: #fea5bb;
-  color: #ffa5ba;
+  width: 32px;
+  height: 32px;
+  fill: #ffa5ba;
 }
 .footer-social__link:hover, .footer-social__link:focus {
   background-color: #d41443;
+  fill: #d41443;
 }
 
 .footer-social__icon {
   width: 32px;
   height: 32px;
-  background-color: transparent;
-  fill: currentColor;
+}
+
+.footer-contacts {
+  margin-bottom: 40px;
+}
+
+.footer-contacts__text {
+  font-weight: 700;
+  font-size: 12px;
+  line-height: 1.8333333333;
+  text-align: right;
+  color: #000000;
+}
+
+.footer-contacts__link {
+  color: #d41443;
+}
+
+.footer-copy {
+  border-top: 1px solid #e1e1e1;
+}
+
+.footer-copy__text {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.5;
+  text-align: center;
+  padding: 16px 70px;
+  color: #907e82;
 }/*# sourceMappingURL=index.css.map */
