@@ -1,11 +1,19 @@
-.contacts__section { 
-    padding-bottom: 40px;
-  @include positioning-flex;  
+.contacts__section {
+  padding-bottom: 40px;
+  @include positioning-flex();
   background: $bgSection;
-
+  background-image: linear-gradient(
+    $colorWhite 0%,
+    $colorWhite 24%,
+    $bgSection 24%,
+    $bgSection 100%
+  );
 }
 
 .contacts__item {
+  font-size: 12px;
+  line-height: 1.86;
+  text-align: left;
   padding: 40px 32px;
   background: $bgPage;
   box-shadow: 0px 8px 30px rgba(212, 20, 67, 0.1);
@@ -16,107 +24,94 @@
   @media screen and (min-width: 1200px) {
     padding: 40px 40px;
   }
-  
 }
 
 .contacts__item:last-child {
-    @media screen and (max-width: 767px) {
-        margin-bottom: 32px;
-      }
+  @media screen and (max-width: 767px) {
+    margin-bottom: 32px;
+  }
 }
 
 .contacts__category {
-  font-size: 16px;
-  line-height: 1.86;
+  display: block;
+  letter-spacing: 0.04em;
   text-transform: uppercase;
   text-align: center;
   color: $colorWhite;
   background: $bgColorBeige;
   border-radius: 6px;
-  width: 75px;
+  width: 80px;
 }
 
 .contacts__category--bgcolor {
   background: $bgColorGreen;
-  width: 138px;
+  width: 130px;
 }
 
 .contacts__title {
-  font-size: 16px;
-  line-height: 1.86;
+  letter-spacing: 0.04em;
   margin-top: 20px;
   margin-bottom: 8px;
-  @media screen and (min-width: 768px) { 
+  @media screen and (min-width: 768px) {
     margin-top: 32px;
     margin-bottom: 12px;
   }
 }
 
 .contacts__description {
-  font-size: 16px;
-  line-height: 1.83;
+  line-height: 1.5;
 
   color: $colorDescription;
 }
 
 .contacts__timetable {
-    margin-top: 24px;
-    margin-bottom: 24px;
-    padding-top: 24px;
-    padding-bottom: 24px;
-    border-top: 1px solid $colorLineInContacts;
-    border-bottom: 1px solid $colorLineInContacts;
-@media screen and (min-width: 768px) { 
+  margin-top: 24px;
+  margin-bottom: 24px;
+  padding-top: 24px;
+  padding-bottom: 24px;
+  border-top: 1px solid $colorLineInContacts;
+  border-bottom: 1px solid $colorLineInContacts;
+  @media screen and (min-width: 768px) {
     margin-top: 32px;
     margin-bottom: 32px;
     padding-top: 32px;
     padding-bottom: 32px;
-}
+  }
 }
 
 .contacts__time:first-child {
-    margin-bottom: 8px;
-    @media screen and (min-width: 768px) { 
+  margin-bottom: 8px;
+  @media screen and (min-width: 768px) {
     margin-bottom: 12px;
-}
-}
-
-.contacts__day {
-  font-size: 16px;
-  line-height: 1.86;
+  }
 }
 
 .contacts__day-time {
-  font-size: 16px;
-  line-height: 1.86;
+  text-transform: uppercase;
   color: $colorOverline;
 }
 
-
 .contacts__item-communication {
-  font-size: 12px;
   line-height: 1.5;
   color: $colorDescription;
 }
 
-
 @media screen and (max-width: 767px) {
-    
-.contacts__btn-item { 
-    @include positioning-flex;   
+  .contacts__btn-item {
+    @include positioning-flex;
     margin-bottom: 10px;
-}
-.contacts__btn-item:last-child {
+  }
+  .contacts__btn-item:last-child {
     margin-bottom: 0px;
-}
+  }
 }
 
 .contacts__btn {
-min-width: 161px;
-height: 44px;
+  min-width: 161px;
+  height: 44px;
 }
 
 .contacts__button-icon {
-    width: 8px;
-    height: 10px;
+  width: 8px;
+  height: 10px;
 }
