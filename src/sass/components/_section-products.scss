@@ -1,4 +1,18 @@
 
+.product__list {
+    @media screen and (min-width:768px) {
+        display: flex;
+        flex-wrap: wrap;
+      margin: -8px;
+    }
+}
+
+
+.product__title-block {
+    margin-bottom: 160px;
+}
+
+
 .card-product {
     margin-top: 140px;
     position: relative;
@@ -6,9 +20,22 @@
     padding-bottom: 40px;
     background-color: pink;
     border-radius: 24px;
-    
+
+    @media screen and (min-width:768px) {
+     flex-basis: calc((100% - 6 * 8px) / 3);
+    margin: 8px;
+    padding-top: 118px;
+    }
 }
 
+.card-product--yellow {
+     background-color: $bgColorBeige;
+     
+}
+
+.card-product--green { 
+    background-color: $bgColorGreen;
+}
 
 
 .card-product__title::before {
@@ -19,13 +46,30 @@ background-image: url(../images/mobile/products-cream-mobile.png);
 background-size: contain;
 background-repeat: no-repeat;
 background-position: center;
-
   display: flex;
   width: 280px;
   height: 280px;
+
+  @media screen and (min-width:768px) {
+    background-image: url(../images/tablet/products-cream-tablet.png);
+    width: 224px;
+    height: 224px;}
+
 //   border: 2px solid red;
   border-radius: 2px;
 }
+
+.card-product--yellow__title::before {
+    background-image: url(../images/mobile/products-coffee-mobile.png);
+   @media screen and (min-width:768px) {
+    background-image: url(../images/tablet/products-coffee-tablet.png);}
+}
+.card-product--green__title::before{
+    background-image: url(../images/mobile/products-shake-mobile.png);
+    @media screen and (min-width:768px) {
+    background-image: url(../images/tablet/products-shake-tablet.png);}
+}
+
 
 
 .card-product__title::after {
@@ -39,12 +83,15 @@ background-position: center;
   height: 20px;
   border: 2px solid red;
   border-radius: 2px;
-margin: 32px 0;
-
-
-
+  margin: 32px 0;
 }
-.card-product__dsicription { margin-bottom: 32px;}
-.card-product__icon { 
+
+.card-product__discription { margin-bottom: 32px;}
+.card-product__pre-icon { 
     display: inline-block;
     background-color: white;}
+
+.card-product__icon {
+width: 40px;
+height: 40px;
+}
