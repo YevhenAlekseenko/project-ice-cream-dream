@@ -6,9 +6,31 @@
     $colorWhite 100%
   );
 
+  @media screen and (max-width: 767px) {
+    & {
+      padding-top: 30px;
+      padding-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    & {
+      padding-top: 32px;
+      padding-bottom: 32px;
+    }
+  }
+
+  .container--pictures {
+    @media screen and (max-width: 1199px) {
+      & {
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
+
   .gallery__list {
-    display: flex;
-    justify-content: center;
+    @include positioning-flex($ai: flex-start);
   }
 
   .gallery__item {
@@ -100,15 +122,4 @@
       }
     }
   }
-}
-
-.grid-item {
-  width: 200px;
-  height: 200px;
-  background-color: red;
-  outline: 1px blue;
-}
-.gigante {
-  width: 300px;
-  height: 300px;
 }
