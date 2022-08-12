@@ -1,0 +1,94 @@
+.adventages {
+  &__container {
+    display: block;
+    align-items: center;
+  }
+  &__list {
+    @media screen and (min-width: 768px) {
+      width: 768px;
+      display: flex;
+      flex-direction: row;
+      //   margin-left: 32px;
+      //   margin-right: 209px;
+    }
+  }
+
+  &__number {
+    text-align: left;
+
+    margin-bottom: 4px;
+  }
+  &__text {
+    font-family: $fontMain;
+    color: $colorBlack;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 170%;
+    text-align: start;
+    width: 230px;
+  }
+}
+
+.adventages__item--glass {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 768px;
+    margin-bottom: 64px;
+    margin-right: 4px;
+  }
+
+  &::before {
+    content: ' ';
+    width: 33px;
+    height: 50px;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-image: url(/src/images/common/glass.png);
+  }
+}
+.adventages__item--apples {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 32px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
+    margin-right: 22px;
+  }
+
+  &::before {
+    content: ' ';
+    width: 33px;
+    height: 50px;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-image: url(/src/images/common/apples.png);
+  }
+}
+
+.adventages__item--heart {
+  display: flex;
+  flex-direction: column;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 64px;
+  }
+
+  &::before {
+    content: ' ';
+    width: 33px;
+    height: 50px;
+    margin-bottom: 16px;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: contain;
+    background-image: url(/src/images/common/heart.png);
+  }
+}
