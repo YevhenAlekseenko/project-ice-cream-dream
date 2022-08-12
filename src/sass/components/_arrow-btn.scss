@@ -1,0 +1,14 @@
+.arrow-btn {
+  display: block;
+  background-color: $colorWhite;
+  color: $colorMain;
+  border: none;
+  border-radius: 50%;
+}
+
+.arrow-btn__icon {
+  display: block;
+  width: 13px;
+  height: 12px;
+  fill: currentColor;
+}

@@ -1,84 +1,87 @@
 <section class="section hero__section">
   <div class="container hero__container">
-    <div class="hero__decoration-circle"></div>
-    <picture class="hero__main-img">
-      <source
-        srcset="
-          ./images/mobile/hero-mobile.webp    1x,
-          ./images/mobile/hero-mobile@2x.webp 2x
-        "
-        media="(max-width: 767px)"
-        type="image/webp"
-      />
-      <source
-        srcset="
-          ./images/mobile/hero-mobile.png    1x,
-          ./images/mobile/hero-mobile@2x.png 2x
-        "
-        media="(max-width: 767px)"
-        type="image/png"
-      />
+    <div class="hero__decoration-circle">
+      <picture class="hero__main-img animate__animated animate__bounceInRight">
+        <source
+          srcset="
+            ./images/desktop/hero-desktop.webp    1x,
+            ./images/desktop/hero-desktop@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/desktop/hero-desktop.png    1x,
+            ./images/desktop/hero-desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
 
-      <source
-        srcset="
-          ./images/tablet/hero-tablet.webp    1x,
-          ./images/tablet/hero-tablet@2x.webp 2x
-        "
-        media="(min-width: 768px)"
-        type="image/webp"
-      />
-      <source
-        srcset="
-          ./images/tablet/hero-tablet.png    1x,
-          ./images/tablet/hero-tablet@2x.png 2x
-        "
-        media="(min-width: 768px)"
-        type="image/png"
-      />
+        <source
+          srcset="
+            ./images/tablet/hero-tablet.webp    1x,
+            ./images/tablet/hero-tablet@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/tablet/hero-tablet.png    1x,
+            ./images/tablet/hero-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
 
-      <source
-        srcset="
-          ./images/desktop/hero-desktop.webp    1x,
-          ./images/desktop/hero-desktop@2x.webp 2x
-        "
-        media="(min-width: 1200px)"
-        type="image/webp"
-      />
-      <source
-        srcset="
-          ./images/desktop/hero-desktop.png    1x,
-          ./images/desktop/hero-desktop@2x.png 2x
-        "
-        media="(min-width: 1200px)"
-        type="image/png"
-      />
-      <img
-        srcset="
-          ./images/desktop/hero-desktop.webp    1x,
-          ./images/desktop/hero-desktop@2x.webp 2x
-        "
-        src="./images/tablet/hero-tablet.png"
-        alt="Ice cream cone"
-      />
-    </picture>
+        <source
+          srcset="
+            ./images/mobile/hero-mobile.webp    1x,
+            ./images/mobile/hero-mobile@2x.webp 2x
+          "
+          media="(max-width: 767px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/mobile/hero-mobile.png    1x,
+            ./images/mobile/hero-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
+          type="image/png"
+        />
 
-    <h1 class="heading-h2 heading-h1">
-      ice cream made with <span class="heading-h1--accent">passion</span>
-    </h1>
-    <ul class="hero__btnset">
-      <li class="hero__btnitem">
-        <a href="#" class="hero__btnlink">
-          <button class="button-dark button-dark--small">Products</button>
-        </a>
-      </li>
-      <li class="hero__btnitem">
-        <a href="#" class="hero__btnlink">
-          <button class="button-light button-light--small">
+        <img
+          srcset="
+            ./images/desktop/hero-desktop.webp    1x,
+            ./images/desktop/hero-desktop@2x.webp 2x
+          "
+          src="./images/tablet/hero-tablet.png"
+          alt="Ice cream cone"
+        />
+      </picture>
+    </div>
+
+    <div class="container hero__overlay">
+      <h1
+        class="heading-h2 hero__heading animate__animated animate__bounceInLeft"
+      >
+        ice cream made with <span class="hero__heading--accent">passion</span>
+      </h1>
+      <ul class="hero__btnset">
+        <li class="hero__btnitem">
+          <a href="#products" class="hero__btnlink"> Products </a>
+        </li>
+        <li class="hero__btnitem">
+          <a href="#about" class="hero__btnlink hero__btnlink--light">
             How it’s made?
-          </button>
-        </a>
-      </li>
-    </ul>
+          </a>
+        </li>
+      </ul>
+    </div>
+
     <div class="hero__leftthumb">
       <img src="./images/tablet/hero-milk-tablet.png" alt="Jug of milk" />
     </div>
