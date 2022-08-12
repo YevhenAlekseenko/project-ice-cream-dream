@@ -1,40 +1,62 @@
-<section id="about" class="about section">
-    <div class="about-container container">
-        <p class="about__pre-text">tradition and love</p>
-        <h2 class="about__title">how it’s made?</h2>
-        <div class="about-box">
-            <picture>
-                <source srcset="./images/desktop/about-cow-desktop.png 1x,
-                                        ./images/desktop/about-cow-desktop@2x.png 2x" media="(min-width: 1200px)">
+<section id="about" class="section about">
+  <div class="container about-container">
+    <p class="about__pre-text">Tradition and love</p>
+    <h2 class="about__title">How it’s made?</h2>
+    <div class="about-box">
+      <picture>
+        <source
+          srcset="
+            ./images/desktop/about-cow-desktop.png    1x,
+            ./images/desktop/about-cow-desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+        />
 
-                <source srcset="./images/tablet/about-cow-tablet.png 1x,
-                                            ./images/tablet/about-cow-tablet@2x.png 2x" media="(min-width: 768px)">
+        <source
+          srcset="
+            ./images/tablet/about-cow-tablet.png    1x,
+            ./images/tablet/about-cow-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+        />
 
-                <source srcset="./images/mobile/about-cow-mobile.png 1x,
-                                            ./images/mobile/about-cow-mobile@2x.png 2x" media="(max-width: 767px)">
+        <source
+          srcset="
+            ./images/mobile/about-cow-mobile.png    1x,
+            ./images/mobile/about-cow-mobile@2x.png 2x
+          "
+          media="(max-width: 767px)"
+        />
 
-                <img src="./images/desktop/about-cow-desktop.png" class="about-img" alt="Cow with milk">
-            </picture>
+        <img
+          src="./images/desktop/about-cow-desktop.png"
+          class="about-img"
+          alt="Cow with milk"
+        />
+      </picture>
 
-            <div class="about-box__content">
-                <p class="about-box__text">Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
-                    cursus, faucibus lorem eget, egestas eros.
-                    Maecenas eleifend erat at justo fringilla.</p>
-                <p class="about-box__after--text">Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
-                    Mauris rhoncus orci in imperdiet placerat.
-                    Vestibulum euismod nisl suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
-                    tincidunt.
-                    <br>
-                    <br>
-                    Aliquam erat volutpat. Aenean accumsan.
-                </p>
-                <button type="button" class="button-light" aria-label="Read more">Read
-                    more
-                    <svg class="button-light__icon">
-                        <use href="./images/icons.svg#icon-arrow"></use>
-                    </svg>
-                </button>
-            </div>
-        </div>
+      <div class="about-box__content">
+        <p class="about-box__text">
+          Fusce ut velit laoreet, tempus arcu eu, molestie tortor. Nam vel justo
+          cursus, faucibus lorem eget, egestas eros. Maecenas eleifend erat at
+          justo fringilla.
+        </p>
+        <p class="about-box__text about-box__text--after">
+          Curabitur lacinia enim at ex blandit, vel pellentesque odio elementum.
+          Mauris rhoncus orci in imperdiet placerat. Vestibulum euismod nisl
+          suscipit ligula volutpat, a feugiat urna maximus. Cras massa nibh,
+          tincidunt.
+        </p>
+        <p class="about-box__text about-box__text--after">
+          Aliquam erat volutpat. Aenean accumsan.
+        </p>
+        <button type="button" class="button-light button-light__about">
+          Read more
+          <svg class="button-light__icon">
+            <use href="./images/icons.svg#icon-arrow"></use>
+          </svg>
+        </button>
+      </div>
     </div>
+  </div>
 </section>
