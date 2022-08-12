@@ -1,0 +1,61 @@
+.hero__section {
+  position: relative;
+  overflow: hidden;
+  background-color: $bgHeaderHero;
+  height: 502px;
+  padding-top: 194px;
+  @media screen and (min-width: 768px) {
+    height: 416px;
+    padding-top: 92px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    height: 664px;
+    padding-top: 147px;
+  }
+}
+
+// .hero__container {
+//   position: relative;
+// }
+
+.hero__decoration-circle {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%) translate(36px, 5px);
+
+  width: 346px;
+  height: 346px;
+  background-color: $bgSocial;
+  border-radius: 50%;
+
+  @media screen and (min-width: 419px) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(0, 2px);
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 335px;
+    height: 335px;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(31px, 2px);
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 534px;
+    height: 534px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) translate(184px, -11px);
+  }
+}
+
+.hero__main-img {
+  position: absolute;
+  top: 92px;
+  left: 117px;
+}
