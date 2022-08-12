@@ -3,9 +3,19 @@
   background-color: $bgSection;
 }
 
+.footer__container {
+  @media screen and (min-width: 768px) {
+    @include positioning-flex(flex, space-between, center);
+  }
+}
+
 .footer__content {
   margin-bottom: 40px;
   width: 234px;
+
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 60px;
+  }
 }
 
 .footer__subtitle {
@@ -15,10 +25,26 @@
   text-transform: uppercase;
 
   color: $colorOverline;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+    min-width: 340px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+    width: 474px;
+  }
 }
 
 .footer__subtitle--append {
   margin-bottom: 16px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 12px;
+  }
 }
 
 .footer__text {
@@ -27,6 +53,19 @@
   line-height: calc(39 / 34);
   letter-spacing: 0.04em;
   text-transform: uppercase;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+    letter-spacing: 0.06em;
+    width: 340px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+    width: 500px;
+  }
 }
 
 .footer-social {
@@ -61,11 +100,21 @@
   &:focus {
     fill: $colorMain;
   }
+
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .footer-social__icon {
   width: 32px;
   height: 32px;
+
+  @media screen and (min-width: 768px) {
+    width: 34px;
+    height: 34px;
+  }
 }
 
 .footer-contacts {
@@ -79,6 +128,16 @@
   text-align: right;
 
   color: $colorBlack;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(26 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(30 / 16);
+  }
 }
 
 .footer-contacts__link {
@@ -97,4 +156,9 @@
   padding: 16px 70px;
 
   color: $colorDescription;
+
+  @media screen and (min-width: 768px) {
+    line-height: calc(26 / 14);
+    padding: 8px;
+  }
 }
