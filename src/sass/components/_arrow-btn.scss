@@ -1,9 +1,12 @@
 .arrow-btn {
-  display: block;
+  @include positioning-flex();
+  width: 40px;
+  height: 40px;
   background-color: $colorWhite;
   color: $colorMain;
   border: none;
   border-radius: 50%;
+  cursor: pointer;
 }
 
 .arrow-btn__icon {
