@@ -1,5 +1,67 @@
 <section class="section hero__section">
   <div class="container hero__container">
+    <div class="hero__decoration-circle"></div>
+    <picture class="hero__main-img">
+      <source
+        srcset="
+          ./images/mobile/hero-mobile.webp    1x,
+          ./images/mobile/hero-mobile@2x.webp 2x
+        "
+        media="(max-width: 767px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/mobile/hero-mobile.png    1x,
+          ./images/mobile/hero-mobile@2x.png 2x
+        "
+        media="(max-width: 767px)"
+        type="image/png"
+      />
+
+      <source
+        srcset="
+          ./images/tablet/hero-tablet.webp    1x,
+          ./images/tablet/hero-tablet@2x.webp 2x
+        "
+        media="(min-width: 768px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/tablet/hero-tablet.png    1x,
+          ./images/tablet/hero-tablet@2x.png 2x
+        "
+        media="(min-width: 768px)"
+        type="image/png"
+      />
+
+      <source
+        srcset="
+          ./images/desktop/hero-desktop.webp    1x,
+          ./images/desktop/hero-desktop@2x.webp 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/webp"
+      />
+      <source
+        srcset="
+          ./images/desktop/hero-desktop.png    1x,
+          ./images/desktop/hero-desktop@2x.png 2x
+        "
+        media="(min-width: 1200px)"
+        type="image/png"
+      />
+      <img
+        srcset="
+          ./images/desktop/hero-desktop.webp    1x,
+          ./images/desktop/hero-desktop@2x.webp 2x
+        "
+        src="./images/tablet/hero-tablet.png"
+        alt="Ice cream cone"
+      />
+    </picture>
+
     <h1 class="heading-h2 heading-h1">
       ice cream made with <span class="heading-h1--accent">passion</span>
     </h1>
@@ -32,8 +94,7 @@
       </svg>
     </span>
   </a>
-  <div class="hero__decoration-cercle"></div>
-  <img src="./images/tablet/hero-tablet.png" alt="Ice cream cone" />
+
   <ul class="hero__counters">
     <li class="hero__counter">
       <div class="hero__counterset">
