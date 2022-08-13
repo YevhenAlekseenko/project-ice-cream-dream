@@ -1,48 +1,58 @@
+.product__custom {
+  padding: 0;
+}
+
+
 .product__title-block {
   margin-bottom: 148px;
 
-  @media screen and (min-width:1200px) {
-    margin-bottom: 281px;}
-  
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 281px;
+  }
 }
 
-
 .product__title-label {
-font-size: 18px;
-line-height: 1.16;
-margin-bottom: 15px;
+  font-size: 18px;
+  line-height: 1.16;
+  margin-bottom: 15px;
 
-@media screen and (min-width:768px) {
-font-size: 26px;
-line-height: 1.15;}
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: 1.15;
+    margin-bottom: 18px;
+  }
 
-@media screen and (min-width:1200px) {
-font-size: 30px;
-line-height: 1.13;}
-
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+     margin-bottom: 16px;
+  }
 }
 
 .product__title {
-font-size: 34px;
-line-height: 1.16;
-letter-spacing: 0.04em;
+  font-size: 34px;
+  line-height: 1.16;
+  letter-spacing: 0.04em;
 
-@media screen and (min-width:768px) {
-  font-size: 48px;
-line-height: 1.15;
-}
-@media screen and (min-width:1200px) {
-font-size: 58px;
-line-height: 1.13;}
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: 1.15;
+  }
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: 1.13;
+    letter-spacing: 0.06em;
+  }
 }
 
 .product__list {
- @media screen and (min-width:768px) {
-        display: flex;
-      margin: -8px;
-    }
-@media screen and (min-width:1200px) {
-  margin: -16px;}
+  @media screen and (min-width: 768px) {
+    display: flex;
+    margin: -8px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin: -16px;
+  }
 }
 
 .card-product {
@@ -51,19 +61,21 @@ line-height: 1.13;}
   width: 280px;
   padding-bottom: 40px;
   margin: 0 auto;
-  @media screen and (min-width:768px) {
- width: 224px;
-      margin: 8px auto;
-    }
+  @media screen and (min-width: 768px) {
+    width: 224px;
+    margin: 8px auto;
+  }
 
-@media screen and (min-width:1200px) {
-  width: 368px;
-  margin: 16px auto;
- padding-bottom: 60px;}
+  @media screen and (min-width: 1200px) {
+    width: 368px;
+    margin: 16px auto;
+    padding-bottom: 60px;
+  }
 
-  @media screen and (max-width:767px) 
-  {margin-bottom: 140px;
-}}
+  @media screen and (max-width: 767px) {
+    margin-bottom: 140px;
+  }
+}
 
 .card-product--yellow {
   background-color: $bgColorBeige;
@@ -73,77 +85,134 @@ line-height: 1.13;}
   background-color: $bgColorGreen;
 }
 
-
 .card-product__title {
-position: relative;
+  position: relative;
 
-padding-top: 160px;
+  padding-top: 160px;
 
-font-family: 'Titan One';
-font-style: normal;
-font-weight: 400;
-font-size: 20px;
-line-height: 1.15;
-text-align: center;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: #FFFFFF;
+  font-family: $fontSecondary;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $colorWhite;
 
-@media screen and (min-width:768px) {
-padding-top: 110px;}
+  @media screen and (min-width: 768px) {
+    padding-top: 110px;
+  }
 
-@media screen and (min-width:1200px) {
-font-size: 30px;
-line-height: 1.13;
-padding-top: 165px;}
-
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: 1.13;
+    padding-top: 165px;
+  }
 }
-
 
 .card-product__title::before {
   content: '';
   position: absolute;
   bottom: 60;
   left: 0;
-display: block;
-width: 280px;
-height: 280px;
-background-image: url(../images/mobile/products-cream-mobile.png);
-background-size: contain;
-background-repeat: no-repeat;
-background-position: center;
-margin-bottom: 20px;
+  display: block;
+  width: 280px;
+  height: 280px;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  margin-bottom: 20px;
 
- @media screen and (min-width:768px) {
-  width: 224px;
-  height: 224px;
-  background-image:url(../images/tablet/products-cream-tablet.png) ;}
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    background-image: url(../images/mobile/products-cream-mobile@2x.png);
+  }
 
-   @media screen and (min-width:1200px) {
-  width: 368px;
-  height: 394px;
-  background-image:url(../images/desktop/products-cream-desktop.png) ;
-bottom: 80px;}
+  background-image: url(../images/mobile/products-cream-mobile.png);
 
+  @media screen and (min-width: 768px) {
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: url(../images/tablet/products-cream-tablet@2x.png);
+    }
+
+    width: 224px;
+    height: 224px;
+    background-image: url(../images/tablet/products-cream-tablet.png);
+  }
+
+  @media screen and (min-width: 1200px) {
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: url(../images/desktop/products-cream-desktop@2x.png);
+    }
+
+    width: 368px;
+    height: 394px;
+    background-image: url(../images/desktop/products-cream-desktop.png);
+    bottom: 80px;
+  }
 }
 
 .card-product--yellow__title::before {
-background-image: url(../images/mobile/products-coffee-mobile.png);
-@media screen and (min-width:768px) {
-  background-image:url(../images/tablet/products-coffee-tablet.png)
+
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    background-image: url(../images/mobile/products-coffee-mobile@2x.png);}
+    background-image: url(../images/mobile/products-coffee-mobile.png);
+
+
+  @media screen and (min-width: 768px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    background-image: url(../images/tablet/products-coffee-tablet@2x.png);}
+    background-image: url(../images/tablet/products-coffee-tablet.png);
+  }
+
+
+  @media screen and (min-width: 1200px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    background-image: url(../images/desktop/products-coffee-desktop@2x.png);}  
+    background-image: url(../images/desktop/products-coffee-desktop.png);
+  }
 }
- @media screen and (min-width:1200px) {
-  background-image:url(../images/desktop/products-coffee-desktop.png)
- }
-}
+
+
+
+
+
 .card-product--green__title::before {
-background-image: url(../images/mobile/products-shake-mobile.png);
-@media screen and (min-width:768px) {
-  background-image:url(../images/tablet/products-shake-tablet.png)
-}
- @media screen and (min-width:1200px) {
-  background-image:url(../images/desktop/products-shake-desktop.png)
- }
+@media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    background-image: url(../images/mobile/products-shake-mobile@2x.png);}
+    background-image: url(../images/mobile/products-shake-mobile.png);
+
+
+  @media screen and (min-width: 768px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    background-image: url(../images/tablet/products-shake-tablet@2x.png);}
+    background-image: url(../images/tablet/products-shake-tablet.png);
+  }
+
+
+  @media screen and (min-width: 1200px) {
+  @media screen and (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx),
+    (min-resolution: 192dpi) {
+    background-image: url(../images/desktop/products-shake-desktop@2x.png);}  
+    background-image: url(../images/desktop/products-shake-desktop.png);
+  }
 }
 
 .card-product__title::after {
@@ -151,28 +220,29 @@ background-image: url(../images/mobile/products-shake-mobile.png);
   display: block;
   width: 26px;
   height: 6px;
-  border-bottom: 6px dotted #FFFFFF;
+  border-bottom: 6px dotted #ffffff;
   margin: 32 auto;
 }
 
 .card-product__discription {
-font-weight: 700;
-font-size: 14px;
-line-height: 152%;
-color: #FFFFFF;
-padding: 0 40px;
-margin-bottom: 32px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.52;
+  color: #ffffff;
+  padding: 0 40px;
+  margin-bottom: 32px;
 
-@media screen and (min-width:768px) {
-  padding: 0 32px;}
+  @media screen and (min-width: 768px) {
+    padding: 0 32px;
+    line-height: 1.76;
+  }
 
-@media screen and (min-width:1200px) {
-font-size: 16px;
-line-height: 1.76;
-padding: 0 64px;
-margin-bottom: 60px}
-
-
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: 1.76;
+    padding: 0 64px;
+    margin-bottom: 60px;
+  }
 }
 
 .product__button {
