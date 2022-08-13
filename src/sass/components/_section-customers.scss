@@ -1,78 +1,9 @@
-.slider__reviews {
+.slider {
     margin: auto;
     min-height: 300px;
     margin: auto;
 }
 
-.slider__item {
-    display: none;
-}
-
-.slider__dots {
-    text-align: center;
-}
-
-.slider__dots_svg-one,
-.slider__dots_svg-two,
-.slider__dots_svg-three {
-    opacity: 0;
-}
-
-.slider__dots_item {
-    cursor: pointer;
-    
-    display: inline-block;
-    transition: background-color 0.6s $timingPrimary;
-
-    background-color: $colorDots;
-    height: 12px;
-    width: 12px;
-    border-radius: 50%;
-    
-    &:not(:last-child) {
-        margin-right: 18px;
-    }
-}
-
-
-.active-slider {
-    background-color: transparent;
-    border: none;
-}
-
-.slider__dots_item.active-slider .slider__dots_svg-two {
-    opacity: 1;
-    fill: $bgBtnDark;
-    transition: opacity 0.6s $timingPrimary;
-}
-
-.slider__dots_item.active-slider .slider__dots_svg-one {
-    opacity: 1;
-    fill: $bgBtnDark;
-    transition: opacity 0.6s $timingPrimary;
-}
-
-.slider__dots_item.active-slider .slider__dots_svg-three {
-    opacity: 1;
-    fill: $bgBtnDark;
-    transition: opacity 0.6s $timingPrimary;
-}
-
-.fade {
-    animation-name: fade;
-    animation-duration: 1.5s;
-}
-
-@keyframes fade {
-    from {
-        opacity: .4
-    }
-
-    to {
-        opacity: 1
-    }
-
-}
 
 .slider__item_foto {
     margin-left: auto;
@@ -166,12 +97,9 @@
     text-align: center;
     background-size: contain;
     display: inline-block;
-    background-image: url(../images/common/ellipse.png),
-                        url(../images/common/ellipse.png),
-                        url(../images/common/ellipse.png);
-    background-size: 4px, 4px, 4px;
+    background-image: url(../images/dots.svg);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: top 0 right 0, top 0 left 0, top 0 center;
     margin-bottom: 16px;
 }
 

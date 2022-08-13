@@ -1,18 +1,67 @@
 .section--pictures {
-  background: #fff linear-gradient(#fff5f6 0% 29.08%, #fff 0% 100%);
+  @media screen and (max-width: 767px) {
+    & {
+      padding-top: 30px;
+      padding-bottom: 30px;
+
+      background-image: linear-gradient(
+        $bgSection 0%,
+        $bgSection 29%,
+        $colorWhite 29%,
+        $colorWhite 100%
+      );
+    }
+  }
+
+  @media screen and (min-width: 768px) and (max-width: 1199px) {
+    & {
+      padding-top: 32px;
+      padding-bottom: 32px;
+
+      background-image: linear-gradient(
+        $bgSection 0%,
+        $bgSection 57%,
+        $colorWhite 57%,
+        $colorWhite 100%
+      );
+    }
+  }
+
+  @media screen and (min-width: 1200px) {
+    & {
+      background-image: linear-gradient(
+        $bgSection 0%,
+        $bgSection 27%,
+        $colorWhite 27%,
+        $colorWhite 100%
+      );
+    }
+  }
+
+  .container--pictures {
+    @media screen and (max-width: 1199px) {
+      & {
+        padding: 0;
+        width: 100%;
+      }
+    }
+  }
 
   .gallery__list {
-    display: flex;
-    justify-content: center;
+    @include positioning-flex($ai: flex-start);
   }
 
   .gallery__item {
     position: relative;
 
     &:not(:last-child) {
-      margin-right: 2.53px;
+      @media screen and (max-width: 767px) {
+        & {
+          margin-right: 2.53px;
+        }
+      }
 
-      @media screen and (max-width: 1199px) {
+      @media screen and (min-width: 768px) and (max-width: 1199px) {
         & {
           margin-right: 6px;
         }
@@ -31,7 +80,7 @@
         top: 109px;
       }
       @media screen and (min-width: 1200px) {
-        top: 143px;
+        top: 142px;
       }
     }
     &:nth-child(2) {
@@ -44,7 +93,7 @@
       }
     }
     &:nth-child(4) {
-      top: 30px;
+      top: 31px;
       @media screen and (min-width: 768px) {
         top: 75px;
       }
@@ -53,7 +102,7 @@
       }
     }
     &:nth-child(5) {
-      top: 20px;
+      top: 21px;
       @media screen and (min-width: 768px) {
         top: 50px;
       }
@@ -73,8 +122,8 @@
   }
 
   .gallery__pic {
-    margin-bottom: 2.53px;
     display: block;
+    transition: transform $durationPrimary $timingPrimary;
 
     &:hover {
       position: relative;
@@ -82,7 +131,13 @@
       z-index: 2;
     }
 
-    @media screen and (max-width: 1199px) {
+    @media screen and (max-width: 767px) {
+      & {
+        margin-bottom: 2.53px;
+      }
+    }
+
+    @media screen and (min-width: 768px) and (max-width: 1199px) {
       & {
         margin-bottom: 6px;
       }
