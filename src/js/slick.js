@@ -4,6 +4,7 @@ $('.rev_slider').slick({
     speed: 300,
     slidesToShow: 1,
     adaptiveHeight: true,
-    autoplay: true
+    autoplay: true,
+    arrows: false
 }); 
 
