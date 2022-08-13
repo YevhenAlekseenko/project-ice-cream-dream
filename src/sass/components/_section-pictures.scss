@@ -6,8 +6,8 @@
 
       background-image: linear-gradient(
         $bgSection 0%,
-        $bgSection 15%,
-        $colorWhite 15%,
+        $bgSection 20%,
+        $colorWhite 20%,
         $colorWhite 100%
       );
     }
@@ -20,8 +20,8 @@
 
       background-image: linear-gradient(
         $bgSection 0%,
-        $bgSection 56%,
-        $colorWhite 56%,
+        $bgSection 57%,
+        $colorWhite 57%,
         $colorWhite 100%
       );
     }
@@ -121,7 +121,7 @@
     }
   }
 
-  .gallery__pic {
+  .gallery__img {
     display: block;
     transition: transform $durationPrimary $timingPrimary;
 
@@ -130,21 +130,25 @@
       transform: scale(1.5);
       z-index: 2;
     }
+  }
+
+  .gallery__pic {
+    display: block;
 
     @media screen and (max-width: 767px) {
-      & {
+      &:not(:nth-of-type(2n)) {
         margin-bottom: 2.53px;
       }
     }
 
     @media screen and (min-width: 768px) and (max-width: 1199px) {
-      & {
+      &:not(:nth-of-type(2n)) {
         margin-bottom: 6px;
       }
     }
 
     @media screen and (min-width: 1200px) {
-      & {
+      &:not(:nth-of-type(2n)) {
         margin-bottom: 8px;
       }
     }
