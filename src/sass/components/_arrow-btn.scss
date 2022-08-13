@@ -7,6 +7,14 @@
   border: none;
   border-radius: 50%;
   cursor: pointer;
+  transition: background-color $durationPrimary $timingPrimary,
+    color $durationPrimary $timingPrimary;
+
+  &:hover,
+  &:focus {
+    background-color: $bgBtnDark;
+    color: $colorWhite;
+  }
 }
 
 .arrow-btn__icon {

@@ -282,7 +282,7 @@
 .hero__counter-list {
   margin-bottom: 72px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 109px;
   }
 }
@@ -290,7 +290,7 @@
 .hero__counter:first-child {
   margin-bottom: 13px;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     margin-bottom: 18px;
   }
 }
@@ -308,7 +308,7 @@
   text-transform: uppercase;
   color: $colorMain;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 46px;
     line-height: 1.152;
   }
@@ -326,7 +326,7 @@
     content: '';
     background-color: $colorWhite;
 
-    @media screen and (min-width: 1280px) {
+    @media screen and (min-width: 1200px) {
       width: 30px;
       height: 30px;
     }
@@ -340,7 +340,7 @@
   text-align: right;
   color: $colorWhite;
 
-  @media screen and (min-width: 1280px) {
+  @media screen and (min-width: 1200px) {
     font-size: 14px;
     line-height: 1.1286;
   }
