@@ -64,7 +64,7 @@
       </picture>
     </div>
 
-    <div class="container hero__overlay">
+    <div class="hero__left-overlay">
       <h1
         class="heading-h2 hero__heading animate__animated animate__bounceInLeft"
       >
@@ -80,43 +80,124 @@
           </a>
         </li>
       </ul>
-    </div>
+      <div class="hero__milkbox">
+        <picture class="hero__milk-img">
+          <source
+            srcset="
+              ./images/desktop/hero-milk-desktop.webp    1x,
+              ./images/desktop/hero-milk-desktop@2x.webp 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/desktop/hero-milk-desktop.png    1x,
+              ./images/desktop/hero-milk-desktop@2x.png 2x
+            "
+            media="(min-width: 1200px)"
+            type="image/png"
+          />
 
-    <div class="hero__leftthumb">
-      <img src="./images/tablet/hero-milk-tablet.png" alt="Jug of milk" />
+          <source
+            srcset="
+              ./images/tablet/hero-milk-tablet.webp    1x,
+              ./images/tablet/hero-milk-tablet@2x.webp 2x
+            "
+            media="(min-width: 768px)"
+            type="image/webp"
+          />
+          <source
+            srcset="
+              ./images/tablet/hero-milk-tablet.png    1x,
+              ./images/tablet/hero-milk-tablet@2x.png 2x
+            "
+            media="(min-width: 768px)"
+            type="image/png"
+          />
+
+          <img
+            class="hero__milk-img"
+            srcset="
+              ./images/desktop/hero-milk-desktop.webp    1x,
+              ./images/desktop/hero-milk-desktop@2x.webp 2x
+            "
+            src="./images/tablet/hero-milk-tablet.png"
+            alt="Jug of milk"
+          />
+        </picture>
+        <div class="hero__milk-description">
+          <p class="hero__milk-text">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+            eiusmod tempor incididunt ut labore et
+          </p>
+          <a class="arrow-btn arrow-btn--for-hero" href="#about">
+            <svg
+              class="arrow-btn__icon arrow-btn__icon--for-hero"
+              aria-label="Link to section about"
+            >
+              <use href="./images/icons.svg#icon-right-arrow"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
     </div>
-    <p class="hero__paragraph">
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
-      tempor incididunt ut labore et
-    </p>
+    <div class="hero__right-overlay">
+      <ul class="hero__counter-list">
+        <li class="hero__counter">
+          <p class="hero__numbers">16</p>
+          <p class="hero__description">cafes</p>
+        </li>
+        <li class="hero__counter">
+          <p class="hero__numbers">32</p>
+          <p class="hero__description">food trucks</p>
+        </li>
+      </ul>
+      <picture class="hero__cta-img">
+        <source
+          srcset="
+            ./images/desktop/hero-cta-desktop.webp    1x,
+            ./images/desktop/hero-cta-desktop@2x.webp 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/desktop/hero-cta-desktop.png    1x,
+            ./images/desktop/hero-cta-desktop@2x.png 2x
+          "
+          media="(min-width: 1200px)"
+          type="image/png"
+        />
+
+        <source
+          srcset="
+            ./images/tablet/hero-cta-tablet.webp    1x,
+            ./images/tablet/hero-cta-tablet@2x.webp 2x
+          "
+          media="(min-width: 768px)"
+          type="image/webp"
+        />
+        <source
+          srcset="
+            ./images/tablet/hero-cta-tablet.png    1x,
+            ./images/tablet/hero-cta-tablet@2x.png 2x
+          "
+          media="(min-width: 768px)"
+          type="image/png"
+        />
+
+        <img
+          class="hero__cta-img"
+          srcset="
+            ./images/tablet/hero-cta-tablet.webp    1x,
+            ./images/tablet/hero-cta-tablet@2x.webp 2x
+          "
+          src="./images/tablet/hero-cta-tablet.png"
+          alt="Girl likes her ice cream"
+        />
+      </picture>
+    </div>
   </div>
-  <a href="#" class="hero__link-to-about">
-    <span class="hero__btn-right-arrow">
-      <svg class="hero__icon-right-arrow">
-        <use href="./images/icons.svg#icon-right-arrow"></use>
-      </svg>
-    </span>
-  </a>
-
-  <ul class="hero__counters">
-    <li class="hero__counter">
-      <div class="hero__counterset">
-        <div class="hero__small-decoration"></div>
-        <span class="hero__number">16</span>
-        <p class="hero_counter-description">cafes</p>
-      </div>
-    </li>
-    <li class="hero__counter">
-      <div class="hero__counterset">
-        <div class="hero__small-decoration"></div>
-        <span class="hero__number">23</span>
-        <p class="hero_counter-description">food trucks</p>
-      </div>
-    </li>
-  </ul>
-  <img
-    src="./images/tablet/hero-cta-tablet.png"
-    alt="Girl say: so tasty!"
-    class="hero__cta-picture"
-  />
 </section>

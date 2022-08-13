@@ -1,7 +1,13 @@
 .product__custom {
   padding: 0;
 }
-
+.product__list {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    flex-wrap: wrap;
+    margin: -8px;
+  }
+}
 
 .product__title-block {
   margin-bottom: 148px;
@@ -25,7 +31,7 @@
   @media screen and (min-width: 1200px) {
     font-size: 30px;
     line-height: 1.13;
-     margin-bottom: 16px;
+    margin-bottom: 16px;
   }
 }
 
@@ -74,6 +80,20 @@
 
   @media screen and (max-width: 767px) {
     margin-bottom: 140px;
+  }
+}
+.card-product {
+  margin-top: 140px;
+  position: relative;
+  padding-top: 160px;
+  padding-bottom: 40px;
+  background-color: $bgHeaderHero;
+  border-radius: 24px;
+
+  @media screen and (min-width: 768px) {
+    flex-basis: calc((100% - 6 * 8px) / 3);
+    margin: 8px;
+    padding-top: 118px;
   }
 }
 
@@ -152,66 +172,64 @@
     }
 
     width: 368px;
+
     height: 394px;
-    
+   
     background-image: url(../images/desktop/products-cream-desktop.png);
     bottom: 80px;
   }
 }
 
 .card-product--yellow__title::before {
-
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-    background-image: url(../images/mobile/products-coffee-mobile@2x.png);}
-    background-image: url(../images/mobile/products-coffee-mobile.png);
-
+    background-image: url(../images/mobile/products-coffee-mobile@2x.png);
+  }
+  background-image: url(../images/mobile/products-coffee-mobile.png);
 
   @media screen and (min-width: 768px) {
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
-    background-image: url(../images/tablet/products-coffee-tablet@2x.png);}
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: url(../images/tablet/products-coffee-tablet@2x.png);
+    }
     background-image: url(../images/tablet/products-coffee-tablet.png);
   }
 
-
   @media screen and (min-width: 1200px) {
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
-    background-image: url(../images/desktop/products-coffee-desktop@2x.png);}  
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: url(../images/desktop/products-coffee-desktop@2x.png);
+    }
     background-image: url(../images/desktop/products-coffee-desktop.png);
   }
 }
 
-
-
-
-
 .card-product--green__title::before {
-@media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
-    background-image: url(../images/mobile/products-shake-mobile@2x.png);}
-    background-image: url(../images/mobile/products-shake-mobile.png);
-
-
-  @media screen and (min-width: 768px) {
   @media screen and (min-device-pixel-ratio: 2),
     (min-resolution: 2dppx),
     (min-resolution: 192dpi) {
-    background-image: url(../images/tablet/products-shake-tablet@2x.png);}
+    background-image: url(../images/mobile/products-shake-mobile@2x.png);
+  }
+  background-image: url(../images/mobile/products-shake-mobile.png);
+
+  @media screen and (min-width: 768px) {
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: url(../images/tablet/products-shake-tablet@2x.png);
+    }
     background-image: url(../images/tablet/products-shake-tablet.png);
   }
 
-
   @media screen and (min-width: 1200px) {
-  @media screen and (min-device-pixel-ratio: 2),
-    (min-resolution: 2dppx),
-    (min-resolution: 192dpi) {
-    background-image: url(../images/desktop/products-shake-desktop@2x.png);}  
+    @media screen and (min-device-pixel-ratio: 2),
+      (min-resolution: 2dppx),
+      (min-resolution: 192dpi) {
+      background-image: url(../images/desktop/products-shake-desktop@2x.png);
+    }
     background-image: url(../images/desktop/products-shake-desktop.png);
   }
 }
@@ -221,7 +239,7 @@
   display: block;
   width: 26px;
   height: 6px;
-  border-bottom: 6px dotted #ffffff;
+  border-bottom: 6px dotted $colorWhite;
   margin: 32 auto;
 }
 
@@ -229,7 +247,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
-  color: #ffffff;
+  color: $colorWhite;
   padding: 0 40px;
   margin-bottom: 32px;
 

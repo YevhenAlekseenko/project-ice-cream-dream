@@ -1,0 +1,144 @@
+.about {
+  padding-bottom: 0;
+  background-color: $bgSection;
+  background-image: url(../images/mobile/about-milk-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 500px;
+
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/about-milk-mobile@2x.png);
+  }
+
+  @media screen and (min-width: 768px) {
+    background-image: none;
+  }
+
+  @media screen and (min-width: 1200px) {
+    background-image: url(../images/desktop/about-milk-desktop.png);
+    background-repeat: no-repeat;
+    background-position-y: 170px;
+    background-size: contain;
+
+    @media (min-device-pixel-ratio: 2),
+      (min-resolution: 192dpi),
+      (min-resolution: 2dppx) {
+      background-image: url(../images/desktop/about-milk-desktop@2x.png);
+    }
+  }
+}
+
+.about__pre-text {
+  font-family: $fontSecondary, $fontSecondaryAlternative;
+
+  font-size: 18px;
+  line-height: calc(21 / 18);
+  text-align: center;
+  text-transform: uppercase;
+  margin-bottom: 15px;
+
+  color: $colorOverline;
+
+  @media screen and (min-width: 768px) {
+    font-size: 26px;
+    line-height: calc(30 / 26);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 30px;
+    line-height: calc(34 / 30);
+  }
+}
+
+.about__title {
+  font-family: $fontSecondary, $fontSecondaryAlternative;
+
+  font-size: 34px;
+  line-height: calc(39 / 39);
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: $colorMain;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+    margin-bottom: 40px;
+  }
+}
+
+.about-box {
+  align-items: center;
+  margin-top: 32px;
+
+  @media screen and (min-width: 768px) {
+    @include positioning-flex();
+  }
+}
+
+.about-img {
+  margin: 0 auto;
+}
+
+.about-box__content {
+  text-align: start;
+
+  @media screen and (min-width: 768px) {
+    max-width: 334px;
+    margin-left: 32px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    max-width: 463px;
+    margin-left: 139px;
+  }
+}
+
+.about-box__text {
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  margin-bottom: 20px;
+
+  color: $colorBlack;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 16px;
+    line-height: calc(28 / 16);
+  }
+}
+
+.about-box__text--after {
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  margin-bottom: 20px;
+  color: $colorDescription;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+    margin-bottom: 40px;
+  }
+
+  @media screen and (min-width: 1200px) {
+    line-height: calc(27 / 14);
+  }
+}
+
+.about__btn {
+  min-width: 176px;
+  height: 44px;
+}
