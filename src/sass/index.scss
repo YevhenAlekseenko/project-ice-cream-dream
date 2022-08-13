@@ -2,11 +2,11 @@
 @import './utils/mixins';
 @import './utils/visually-hidden';
 
-
 @import './base/fonts';
 @import './base/common';
 @import './base/resets';
 
+@import './components/modal';
 @import './components/section';
 @import './components/container';
 @import './components/button';
@@ -19,7 +19,7 @@
 @import './components/section-products';
 @import './components/section-about';
 @import './components/section-pictures';
+@import './components/section-advantages';
 @import './components/section-customers';
 @import './components/section-contacs';
 @import './components/footer';
-

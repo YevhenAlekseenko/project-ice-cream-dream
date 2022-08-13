@@ -1,0 +1,77 @@
+.modal__backdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 100;
+  background-color: $bgBackDrop;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity $durationPrimary $timingPrimary;
+}
+
+.modal__backdrop.is-open {
+  visibility: visible;
+  opacity: 1;
+}
+
+.modal__window {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90vw;
+  height: 95vh;
+  opacity: 0;
+  background-color: $colorWhite;
+  color: $colorMain;
+  border: none;
+  border-radius: $borderRadiusModal;
+  transition: opacity $durationPrimary $timingPrimary;
+
+  @media screen and (min-width: 768px) {
+    width: 85vw;
+    height: 90vh;
+  }
+
+  @media screen and (min-width: 1200px) {
+    width: 80vw;
+    height: 85vh;
+  }
+}
+
+.modal__window.is-open {
+  opacity: 1;
+}
+
+.modal__btn-close {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+
+  @include positioning-flex();
+
+  width: 40px;
+  height: 40px;
+  background-color: transparent;
+  border: none;
+  border: 50%;
+  color: $colorMain;
+  transform: rotate(0);
+
+  transition: transform $durationSecondary $timingSecondary;
+
+  &:hover,
+  &:focus {
+    transform: rotate(1turn);
+  }
+}
+
+.modal__icon {
+  display: block;
+  width: 11px;
+  height: 11px;
+  fill: currentColor;
+}
