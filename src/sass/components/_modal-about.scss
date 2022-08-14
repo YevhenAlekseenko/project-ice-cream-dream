@@ -5,83 +5,58 @@
   width: 100vw;
   height: 100vh;
   z-index: 100;
+  display: none;
   background-color: $bgBackDrop;
-  opacity: 1;
+  opacity: 0;
   transition: opacity $durationPrimary $timingPrimary;
 }
 
-.about__backdrop.is-hidden {
-  opacity: 0;
-  pointer-events: none;
-  visibility: hidden;
-  transition: opacity $durationPrimary $timingPrimary;
+.about__backdrop.is-open {
+  opacity: 1;
+  display: block;
 }
 
 .about-modal__window {
-  position: relative;
-  visibility: visible;
+  position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   width: 300px;
-  height: 400px;
-  visibility: visible;
+  opacity: 1;
 
   border: none;
-  border-radius: 24px;
-  padding: 44px;
   border-radius: $borderRadiusModal;
-  background-color: $bgSection;
-  transition: opacity $durationPrimary $timingPrimary;
+  padding: 40px 20px 20px;
+  background-color: $bgHeaderHero;
+  background-image: url(../images/mobile/about-milk-mobile.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: center;
 
-  @media screen and (min-width: 768px) {
-    width: 400px;
-    height: 450px;
+  @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+    background-image: url(../images/mobile/about-milk-mobile@2x.png);
   }
 
   @media screen and (min-width: 1200px) {
-    width: 600px;
-    height: 500px;
-  }
-
-  ::after {
-    content: '';
-    position: absolute;
-    width: 100%;
-    height: 100%;
-
-    background-image: url(../images/mobile/about-milk-mobile.png);
+    background-image: url(../images/desktop/about-milk-desktop.png);
     background-repeat: no-repeat;
     background-size: contain;
-    background-position-y: 140px;
 
     @media (min-device-pixel-ratio: 2),
       (min-resolution: 192dpi),
       (min-resolution: 2dppx) {
-      background-image: url(../images/mobile/about-milk-mobile@2x.png);
+      background-image: url(../images/desktop/about-milk-desktop@2x.png);
     }
+  }
 
-    // @media screen and (min-width: 768px) {
-    //   background-image: none;
-    // }
+  @media screen and (min-width: 768px) {
+    width: 400px;
+  }
 
-    @media screen and (min-width: 1200px) {
-      background-image: url(../images/desktop/about-milk-desktop.png);
-      background-repeat: no-repeat;
-      background-size: contain;
-
-      @media (min-device-pixel-ratio: 2),
-        (min-resolution: 192dpi),
-        (min-resolution: 2dppx) {
-        background-image: url(../images/desktop/about-milk-desktop@2x.png);
-      }
-    }
-    opacity: 0.2;
-
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    z-index: -1;
+  @media screen and (min-width: 1200px) {
+    width: 600px;
   }
 }
 
@@ -96,7 +71,7 @@
   height: 40px;
   background-color: transparent;
   border: none;
-  border: 50%;
+  border-radius: 50%;
   color: $colorMain;
   transform: rotate(0);
 
@@ -105,5 +80,28 @@
   &:hover,
   &:focus {
     transform: rotate(1turn);
+  }
+}
+
+.about-modal__icon {
+  display: block;
+  width: 11px;
+  height: 11px;
+  fill: $colorMain;
+}
+
+.about-box__text--modal {
+  font-size: 12px;
+  line-height: calc(19 / 12);
+  color: $colorDescription;
+  margin-bottom: 0;
+
+  @media screen and (min-width: 768px) {
+    font-size: 14px;
+    line-height: calc(25 / 14);
+  }
+
+  @media screen and (min-width: 1200px) {
+    line-height: calc(27 / 14);
   }
 }

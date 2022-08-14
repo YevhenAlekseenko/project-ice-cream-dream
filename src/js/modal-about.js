@@ -1,14 +1,34 @@
 (() => {
-  const refs = {
-    openModalBtn: document.querySelector("[about-modal-open]"),
-    closeModalBtn: document.querySelector("[about-modal-close]"),
-    modal: document.querySelector("[about-modal]"),
-  };
+  const modalBtnAboutRef = document.querySelector('[data-modal-button-about]');
+  const modalBtnCloseAboutRef = document.querySelector(
+    '[data-modal-close-about]'
+  );
+  const modalBackdropAboutRef = document.querySelector(
+    '[data-modal-backdrop-about]'
+  );
 
-  refs.openModalBtn.addEventListener("click", toggleModal);
-  refs.closeModalBtn.addEventListener("click", toggleModal);
+  // Modal-about
+  modalBtnAboutRef.addEventListener('click', () => {
+    modalBackdropAboutRef.classList.add('is-open');
 
-  function toggleModal() {
-    refs.modal.classList.toggle("is-hidden");
-  }
+    document.body.classList.add('body-fixed');
+  });
+
+  modalBtnCloseAboutRef.addEventListener('click', () => {
+    modalBackdropAboutRef.classList.remove('is-open');
+
+    document.body.classList.remove('body-fixed');
+  });
+
+  document.addEventListener('keydown', event => {
+    const keyName = event.key;
+
+    console.log(keyName);
+
+    if (keyName === 'Escape') {
+      modalBackdropAboutRef.classList.remove('is-open');
+
+      document.body.classList.remove('body-fixed');
+    }
+  });
 })();
