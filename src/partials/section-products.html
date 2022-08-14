@@ -6,19 +6,30 @@
     </div>
     <div class="product__area">
       <ul class="product__list">
-        <li class="card-product">
-          <div>
-          <h3 class="card-product__title">ice cream</h3>
-          <p class="card-product__discription">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
-            dolore magna
-            aliqua facilisis.
-          </p>
-          <button class="arrow-btn product__button" type="button">
-            <svg class="arrow-btn__icon card-product__pre-icon">
-              <use class=" card-product__icon" href="./images/icons.svg#icon-right-arrow"></use>
-            </svg>
-          </button>
+        <li class="card-product" id="card">
+          <div class="front">
+            <h3 class="card-product__title">ice cream</h3>
+            <p class="card-product__discription">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et.
+              dolore magna
+              aliqua facilisis.
+            </p>
+            <button class="arrow-btn product__button" type="button" id="flip">
+              <svg class="arrow-btn__icon card-product__pre-icon">
+                <use class=" card-product__icon" href="./images/icons.svg#icon-right-arrow"></use>
+              </svg>
+            </button>
+          </div>
+          <div class="back">
+            <h3 class="card-product__title card-product__title--reddots red-text">composition</h3>
+            <p class="card-product__discription red-text">
+            Ice cream is comprised of a mixture of air, water, milkfat, nonfat milk solids (NMS) sweeteners, stabilizers, emulsifiers, and flavors
+            </p>
+            <button class="arrow-btn product__button back-flips" type="button" id="back-flip">
+    <svg class="arrow-btn__icon card-product__pre-icon">
+      <use class=" card-product__icon" href="./images/icons.svg#icon-right-arrow"></use>
+    </svg>
+  </button>
           </div>
         </li>
         <li class="card-product card-product--yellow">

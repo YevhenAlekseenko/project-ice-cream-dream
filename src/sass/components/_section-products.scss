@@ -256,3 +256,45 @@
 }
 
 
+
+#card {
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 1s;
+}
+
+#card div {
+  display: block;
+  backface-visibility: hidden;
+}
+
+
+#card .back {
+  top: 0;
+  left: 0;
+  position: absolute;
+  // background: blue;
+  transform: rotateY( 180deg);
+}
+
+#card.flipped {
+  transform: rotateY( 180deg);
+}
+
+.red-text { 
+  color: $colorMain;
+  border-color:$colorMain ;
+}
+
+.card-product__title--reddots:after {
+  content: '';
+  display: block;
+  width: 26px;
+  height: 6px;
+  border-bottom: 6px dotted $colorMain;
+  margin: 32 auto;
+}
+
+.back-flips {
+transform:rotateY(180deg) ;
+}
