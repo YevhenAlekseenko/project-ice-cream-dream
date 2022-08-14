@@ -1,4 +1,6 @@
-.about__backdrop {
+.about__backdrop,
+.franchise__backdrop,
+.map__backdrop {
   position: fixed;
   top: 0;
   left: 0;
@@ -11,12 +13,16 @@
   transition: opacity $durationPrimary $timingPrimary;
 }
 
-.about__backdrop.is-open {
+.about__backdrop.is-open,
+.franchise__backdrop.is-open,
+.map__backdrop.is-open {
   opacity: 1;
   display: block;
 }
 
-.about-modal__window {
+.about-modal__window,
+.franchise-modal__window,
+.map-modal__window {
   position: absolute;
   top: 50%;
   left: 50%;
@@ -60,7 +66,9 @@
   }
 }
 
-.about-modal__btn-close {
+.about-modal__btn-close,
+.franchise-modal__btn-close,
+.map-modal__btn-close {
   position: absolute;
   top: 0px;
   right: 0px;
@@ -83,7 +91,9 @@
   }
 }
 
-.about-modal__icon {
+.about-modal__icon,
+.franchise-modal__icon,
+.map-modal__icon {
   display: block;
   width: 11px;
   height: 11px;

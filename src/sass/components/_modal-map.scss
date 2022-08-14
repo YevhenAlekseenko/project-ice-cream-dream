@@ -1,13 +1,30 @@
-.modal__map-wrap {
+.map-modal__window--resize {
+  width: 95vw;
+  height: 95vh;
+  background: $colorWhite;
+  padding: 45px 5px 20px;
+
+  @media screen and (min-width: 480px) {
+    width: 90vw;
+  }
+
+  @media screen and (min-width: 768px) {
+    width: 80vw;
+    height: 85vh;
+  }
+
+  @media screen and (min-width: 1280px) {
+    width: 60vw;
+    height: 75vh;
+  }
+}
+.map-modal__wrap {
   width: 100%;
   height: 100%;
-  padding: 40px 15px 15px;
 
-  .modal__map {
+  .map-modal__map {
     width: 100%;
     height: 100%;
     border: none;
-    border-bottom-left-radius: $borderRadiusModal;
-    border-bottom-right-radius: $borderRadiusModal;
   }
 }

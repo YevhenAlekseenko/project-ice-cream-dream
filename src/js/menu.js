@@ -1,5 +1,4 @@
 (() => {
-  const modalBtnRef = document.querySelector('[data-modal-button]');
   const menuBtnRef = document.querySelector('[data-menu-button]');
   const menuBtnRefClose = document.querySelector('[data-menu-button-close]');
   const mobileMenuRef = document.querySelector('[data-menu]');
@@ -16,15 +15,6 @@
     mobileMenuRefBackdrop.classList.add('is-open');
 
     document.body.classList.add('body-fixed');
-  });
-
-  modalBtnRef.addEventListener('click', () => {
-    menuBtnRefClose.classList.remove('is-open');
-    menuBtnRef.classList.remove('is-open');
-    menuBtnRef.setAttribute('aria-expanded', !expanded);
-
-    mobileMenuRef.classList.remove('is-open');
-    mobileMenuRefBackdrop.classList.remove('is-open');
   });
 
   document.addEventListener('keydown', event => {
