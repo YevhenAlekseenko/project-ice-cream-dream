@@ -11,6 +11,7 @@
 }
 
 .product__title-label {
+  display: block;
   font-size: 18px;
   line-height: 1.16;
   margin-bottom: 15px;
@@ -58,6 +59,7 @@
   width: 280px;
   padding-bottom: 40px;
   margin: 0 auto;
+
   @media screen and (min-width: 768px) {
     width: 224px;
     margin: 8px auto;
@@ -68,9 +70,11 @@
     margin: 16px auto;
     padding-bottom: 60px;
   }
+}
 
+.card-product + .card-product {
   @media screen and (max-width: 767px) {
-    margin-bottom: 140px;
+    margin-top: 140px;
   }
 }
 
