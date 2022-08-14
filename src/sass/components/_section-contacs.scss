@@ -1,8 +1,14 @@
 .contacts__section {
   padding-top: 0;
+  padding-bottom: 0;
+
   @media screen and (min-width: 768px) {
-    padding-bottom: 40px;
-    padding-top: 0;
+    padding-bottom: 0px;
+    padding-top: 20px;
+  }
+  @media screen and (min-width: 1200px) {
+    padding-bottom: 60px;
+    padding-top: 60px;
   }
 
   background: $bgSection;
