@@ -10,5 +10,6 @@ body {
 }
 
 .body-fixed {
-  overflow: none;
+  position: fixed;
+	height: 100%;
 }
