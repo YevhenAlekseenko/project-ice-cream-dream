@@ -1,3 +1,58 @@
+Кузін Сергій Організація робочого процесу: дошка Trell, Daily meetings, збір і
+публікація загальної інформації по проєкту. Коммунікація проєкту з зовнішнім
+оточенням. Scrum master
+
+---
+
+Барчук Андрій "Організація проєкту: налагодження Parcel, розробка структури,
+створення загальних даних, розбивка на блоки. Командний нагляд." Team leader
+
+---
+
+Барчук Андрій Header Frontend developer
+
+---
+
+Барчук Андрій Hero Frontend developer
+
+---
+
+Міщенко Антон Products Frontend developer
+
+---
+
+Олексієнко Євген About Frontend developer
+
+---
+
+Гречаник Олександр Advantages Frontend developer
+
+---
+
+Крупіцин Владислав Collage Frontend developer
+
+---
+
+Кузін Сергій Customer's review Frontend developer
+
+---
+
+Мартинчук Тарас Contacts Frontend developer
+
+---
+
+Барчук Андрій All modals and scripts Frontend developer
+
+---
+
+Олексієнко Євген Footer Frontend developer
+
+---
+
+Кочетов Валерій "Підготовка: F-17 завантаження і оптимізація картинок для
+(мобилки, планшету та десктоп) для 1х та 2х, побудова svg-спрайту." Frontend
+tranee
+
 **Read in other languages: [Русский](README.md), [Polski](README.pl.md).**
 
 # Parcel template
