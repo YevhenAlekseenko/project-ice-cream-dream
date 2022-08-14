@@ -1,17 +1,19 @@
-<div class="modal__backdrop" data-modal-map-backdrop>
-  <div class="modal__window" data-modal-map>
-    <button class="modal__btn-close" data-modal-map-button-close>
-      <svg class="modal__icon">
+<div class="map__backdrop" data-modal-backdrop-map>
+  <div class="map-modal__window map-modal__window--resize">
+    <button class="map-modal__btn-close" data-modal-close-map>
+      <svg class="map-modal__icon">
         <use href="./images/icons.svg#icon-close"></use>
       </svg>
     </button>
-    <div class="modal__map-wrap">
+    <div class="map-modal__wrap">
       <iframe
-        class="modal__map"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d10167.465355378507!2d30.5340837!3d50.4249619!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa1f7c65300bebad1!2sGoIT!5e0!3m2!1sru!2sua!4v1660424495626!5m2!1sru!2sua"
+        class="map-modal__map"
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2540.4482333741676!2d30.523012315427938!3d50.45137739517971!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40d4ce505b8be8cd%3A0x6fbde9b021ab61dd!2z0JrRgNC10YnQsNGC0LjQug!5e0!3m2!1sru!2sua!4v1660477035813!5m2!1sru!2sua"
         allowfullscreen
         loading="lazy"
-      ></iframe>
+        referrerpolicy="no-referrer-when-downgrade"
+      >
+      </iframe>
     </div>
   </div>
 </div>

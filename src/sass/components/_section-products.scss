@@ -215,7 +215,7 @@
   display: block;
   width: 26px;
   height: 6px;
-  border-bottom: 6px dotted #ffffff;
+  border-bottom: 6px dotted $colorWhite;
   margin: 32 auto;
 }
 
@@ -223,7 +223,7 @@
   font-weight: 700;
   font-size: 14px;
   line-height: 1.52;
-  color: #ffffff;
+  color: $colorWhite;
   padding: 0 40px;
   margin-bottom: 32px;
 
