@@ -50,6 +50,8 @@
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
+  transition: transform $durationPrimary $timingPrimary;
+  transition-delay: 0;
 
   @media screen and (min-width: 768px) {
     margin-bottom: 64px;
@@ -70,11 +72,19 @@
     background-size: contain;
     background-image: url(/src/images/common/glass.png);
   }
+
+  &:hover {
+    position: relative;
+    transform: translateX(50) scale(1.5);
+
+    z-index: 2;
+  }
 }
 .advantages__item--apples {
   display: flex;
   flex-direction: column;
   margin-bottom: 32px;
+  transition: transform $durationPrimary $timingPrimary;
 
   @media screen and (min-width: 768px) {
     margin-right: 22px;
@@ -95,11 +105,18 @@
     background-size: contain;
     background-image: url(/src/images/common/apples.png);
   }
+  &:hover {
+    position: relative;
+    transform: translateX(50) scale(1.5);
+
+    z-index: 2;
+  }
 }
 
 .advantages__item--heart {
   display: flex;
   flex-direction: column;
+  transition: transform $durationPrimary $timingPrimary;
 
   @media screen and (min-width: 768px) {
     margin-right: 96px;
@@ -119,5 +136,11 @@
     background-position: 50% 50%;
     background-size: contain;
     background-image: url(/src/images/common/heart.png);
+  }
+  &:hover {
+    position: relative;
+    transform: translateX(50) scale(1.5);
+
+    z-index: 2;
   }
 }
