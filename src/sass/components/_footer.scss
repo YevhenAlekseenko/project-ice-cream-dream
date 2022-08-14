@@ -1,10 +1,7 @@
 .footer {
   max-width: 1600px;
   margin: 0 auto;
-  padding-top: 0;
-  @media screen and (min-width: 1200px) {
-    padding-top: 60px;
-  }
+  padding: 0;
   color: $colorMain;
   background-color: $bgSection;
 }
@@ -13,14 +10,18 @@
   @media screen and (min-width: 768px) {
     @include positioning-flex(flex, space-between, center);
   }
+  padding-top: 40px;
+  padding-bottom: 40px;
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
 }
 
 .footer__content {
-  margin-bottom: 40px;
-  width: 234px;
-
-  @media screen and (min-width: 1200px) {
-    margin-bottom: 60px;
+  @media screen and (max-width: 767px) {
+    margin-bottom: 40px;
+    width: 234px;
   }
 }
 
@@ -75,12 +76,12 @@
 }
 
 .footer-social {
-  @include positioning-flex(flex, flex-end, none);
+  @include positioning-flex(flex, flex-end, flex-end);
   flex-direction: column;
 }
 
 .footer-social__list {
-  @include positioning-flex(flex, flex-end, none);
+  @include positioning-flex(flex, flex-end, flex-end);
   flex-direction: row;
 
   margin-bottom: 40px;
@@ -123,10 +124,6 @@
   }
 }
 
-.footer-contacts {
-  margin-bottom: 40px;
-}
-
 .footer-contacts__text {
   font-weight: 700;
   font-size: 12px;
@@ -155,16 +152,28 @@
 }
 
 .footer-copy__text {
+  display: block;
+  margin: 0 auto;
+  @media screen and (max-width: 767px) {
+    width: 150px;
+  }
   font-weight: 700;
   font-size: 14px;
   line-height: calc(21 / 14);
   text-align: center;
-  padding: 16px 70px;
+  padding-top: 16px;
+  padding-bottom: 3px;
 
   color: $colorDescription;
 
   @media screen and (min-width: 768px) {
     line-height: calc(26 / 14);
-    padding: 8px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 7px;
+    padding-bottom: 4px;
   }
 }
