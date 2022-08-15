@@ -17,3 +17,50 @@ document.getElementById('back-flip').addEventListener(
   },
   false
 );
+
+//
+
+var yellowcard = document.getElementById('yellowcard');
+
+document.getElementById('yellowflip').addEventListener(
+  'click',
+  function () {
+    yellowcard.classList.toggle('flipped');
+  },
+  false
+);
+
+var yellowcard = document.getElementById('yellowcard');
+
+document.getElementById('yellowback-flip').addEventListener(
+  'click',
+  function () {
+    yellowcard.classList.toggle('flipped');
+  },
+  false
+);
+
+
+//
+
+
+var greencard = document.getElementById('greencard');
+
+document.getElementById('greenflip').addEventListener(
+  'click',
+  function () {
+    greencard.classList.toggle('flipped');
+  },
+  false
+);
+
+var greencard = document.getElementById('greencard');
+
+document.getElementById('greenback-flip').addEventListener(
+  'click',
+  function () {
+    greencard.classList.toggle('flipped');
+  },
+  false
+);
+
