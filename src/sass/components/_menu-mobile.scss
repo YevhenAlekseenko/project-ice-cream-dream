@@ -30,11 +30,6 @@
   transition: visibility $durationSecondary $timingSecondary;
 }
 
-.header__menu {
-  transform: translateX(220%);
-  opacity: 0;
-}
-
 .header__menu.is-open {
   transform: translateX(0);
   opacity: 1;
@@ -50,6 +45,10 @@
   width: 250px;
   height: 100%;
   overflow: auto;
+  transform: translateX(100%);
+  opacity: 0;
+  transition: transform $durationSecondary $timingSecondary,
+    opacity $durationSecondary $timingSecondary;
   background-color: $bgMenuMobile;
   box-shadow: $shadowMenuMobile;
 }

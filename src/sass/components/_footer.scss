@@ -1,20 +1,23 @@
 .footer {
   max-width: 1600px;
   margin: 0 auto;
-  padding: 0;
   color: $colorMain;
+  padding-top: 40px;
   background-color: $bgSection;
+
+  @media screen and (min-width: 1200px) {
+    padding-top: 60px;
+  }
 }
 
 .footer__container {
   @media screen and (min-width: 768px) {
     @include positioning-flex(flex, space-between, center);
   }
-  padding-top: 40px;
-  padding-bottom: 40px;
-  @media screen and (min-width: 1200px) {
-    padding-top: 60px;
-    padding-bottom: 60px;
+  margin-bottom: 40px;
+
+  @media screen and (min-width: 768px) {
+    margin-bottom: 60px;
   }
 }
 
