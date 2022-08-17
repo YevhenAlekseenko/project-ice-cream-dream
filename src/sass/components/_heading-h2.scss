@@ -1,8 +1,18 @@
 .heading-h2 {
-font-family: $fontSecondary, $fontSecondaryAlternative;
-font-size: 48px;
-line-height: 1.1458;
-letter-spacing: 0.04em;
-text-transform: uppercase;
-color: $colorMain;
+  font-family: $fontSecondary, $fontSecondaryAlternative;
+  font-size: 36px;
+  line-height: calc(41 / 36);
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+  color: $colorMain;
+
+  @media screen and (min-width: 768px) {
+    font-size: 48px;
+    line-height: calc(55 / 48);
+  }
+
+  @media screen and (min-width: 1200px) {
+    font-size: 58px;
+    line-height: calc(66 / 58);
+  }
 }
