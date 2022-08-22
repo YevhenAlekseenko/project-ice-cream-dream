@@ -2,10 +2,10 @@
   "name": "parcel-project-template",
   "version": "2.0.0",
   "description": "",
-  "homepage": "https://ABarchuk1976.github.io/ice-cream-dream",
+  "homepage": "https://YevhenAlekseenko.github.io/project-ice-cream-dream",
   "scripts": {
     "start": "parcel src/*.html",
-    "build": "parcel build src/*.html --public-url /ice-cream-dream/"
+    "build": "parcel build src/*.html --public-url /project-ice-cream-dream/"
   },
   "repository": {
     "type": "git",

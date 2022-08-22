@@ -21,7 +21,7 @@
 
 ---
 
-Олексієнко Євген About Frontend developer
+Алексеєнко Євген About Frontend developer
 
 ---
 
@@ -45,7 +45,7 @@
 
 ---
 
-Олексієнко Євген Footer Frontend developer
+Алексеєнко Євген Footer Frontend developer
 
 ---
 
